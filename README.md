@@ -73,6 +73,7 @@ docker build -t pscruzzz/nginx-img ./nginx \
 && docker build -t pscruzzz/users-service-img ./consumer \
 && docker build -t pscruzzz/kafka-img ./kafka \
 && docker build -t pscruzzz/zookeeper-img ./zookeeper \
+&& docker build -t pscruzzz/kafka-cc-img ./control-center-kafka \
 && cd producer && yarn &&  cd ../consumer && yarn && cd .. \
 && docker network prune \
 && docker network create kafkanet \
